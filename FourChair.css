@@ -1,0 +1,72 @@
+header{
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial;
+}
+
+.searchbar{
+    text-align: center;
+}
+
+#input1{
+    width: 500px;
+    height:30px;
+    align-items: center;
+}
+
+#searchbutton{
+    width:60px;
+    height:25px;
+    align-content: center;
+}
+
+.function_buttons{
+    text-align: center;
+    border: 10px;
+}
+
+#zoomin{
+    width: 24px;
+    height:24px;
+}
+
+#zoomout{
+    width: 24px;
+    height:24px;
+}
+
+#mirrow{
+    width:45px;
+    height:24px;
+}
+
+#clear{
+    width: 45px;
+    height:24px;
+}
+
+.images{
+    text-align: center;
+    padding: 20px;
+}
+
+#image1{
+    width: 250px;
+    height:187.5px;
+}
+#image2{
+    width: 250px;
+    height:187.5px;
+}
+#image3{
+    width: 250px;
+    height:187.5px;
+}
+#image4{
+    width: 250px;
+    height:187.5px;
+}
+footer{
+    text-align: center;
+    color: grey;
+}
