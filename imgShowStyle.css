@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(174, 169, 199, 0.637),rgba(174, 169, 199, 0.637)),url(Background_img/white_noun_004_2763.jpg);
+}
+
+.smallImg img{
+    height: 80px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: .6;
+}
+
+.smallImg img:hover{
+    opacity: 1;
+}
+
+.smallImg{
+    float: left;
+}
+
+.allImg{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.ZoomImg{
+    height: 300px;
+}
+
+.ZoomImg{
+    float: right;
+    padding: 10px;
+}
+
+#what{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#answe{
+    text-align: center;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(105, 27, 27);
+}
+
+#butt{
+    padding-left: 100vh;
+    padding-right: 100vh;
+    align-items: center;
+    color: rgb(35, 81, 81);
+}

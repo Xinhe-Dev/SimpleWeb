@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="UTF-8">
+        <title>FourChiar Mini-Database</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="database_client.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <header>
+        <div class="headerStyle">
+        <p><span id="head1"> EECS_1012 Project (FourChair)</span>
+            <span id="head2"> Mini-Database</span>
+            <span id="head3"><button id="lidr" onclick="lidr()">light/dark </button>  <button id="letterSize" onclick="letterSize()">A/A &nbsp&nbsp</button> <!--<button id="">music</button>--></span>
+        </p>
+    </div>
+    </header>
+
+    <body>
+        <div class="searchBorder" id="seabo">
+            <h1 id ="seabo1">Mini-Database 
+                <br>
+                <p id="categor" onclick="category()"> <a href = "./category.html">Category &nbsp&nbsp</a>
+                    <br><a onclick="tips()" id="tips">input tips! &nbsp&nbsp</a>
+                </p>
+                
+            </h1>
+            <form class="searchBar" >
+                <input id="inputImg" placeholder="Please Enter The Category of the images...">
+            </form>
+
+            <button id="jump" value="To 2.html"><img src="SearchBar_img/search.png" alt="A Question symbol"> </button>
+<!--Build in Script to receive the user input category-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        
+        $("#jump").click(function() {
+            var cateName="";
+            var cateName2=document.getElementById("inputImg").value; 
+            var flag=true;                                                                                                                                                                                                   var bank=["apple", "banana", "cherry", "donut", "egg", "fish", "galaxy", "hippo", "icecream", "jellyfish", "kangaroo", "lion", "mango", "nut", "orange", "pineapple", "quokka", "rainbow", "tiger", "umbrella", "whale", "xray", "yard", "zebra"]
+            for(var i=0;i<=25;i++){
+                if(cateName2==bank[i]){
+                    var cateName=cateName2;
+            window.location.href = "ImageShowRoom.html?"+cateName;  
+                }
+                else{
+                    flag=false;
+                }
+            }
+            if(flag==false){
+                alert("invalid input");
+            }
+ 
+        });
+    });
+</script>
+<!--Finish script-->
+        </div>
+    </body>
+    <footer> 
+        <div class="footerStyle">
+        <span id ="footer">©Powered by FourChair </span>
+        </div>
+    </footer>
+</html>
+

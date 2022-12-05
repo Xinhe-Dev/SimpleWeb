@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="utf-8">
+        <title>Image Show Room</title>
+        <link rel="stylesheet" href="imgShowStyle.css" type="text/css">
+        <script src="database_client.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <header>
+        <div>
+            <p id="what">The Category of Image Selected: </p><br><br>
+            <p id="answe"></p>
+
+    
+            <!--Build in Script to receive the user input category-->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    console.log(window.location.href);
+                    console.log(window.location.href.split("?")[1]);
+                    
+                    var pp=document.getElementById("what");
+                    pp.innerHTML+=window.location.href.split("?")[1];
+                    var an=document.getElementById("answe");
+                    an.innerHTML+=window.location.href.split("?")[1];
+                });
+            </script>
+        </div>
+            <!--End of receive user input-->
+
+        <button id="butt" onclick="ON()">Click Me To Reset</button>
+
+    </header>
+    <body>
+        <div class="allImg">
+            <div class="smallImg">
+                <img id="s1" onclick="s1()" src="./EmptyImg/emptyImg.png" width="80px" height="150px">
+                <img id="s2" onclick="s2()" src="./EmptyImg/emptyImg.png" width="80px" height="150px">
+                <img id="s3" onclick="s3()" src="./EmptyImg/emptyImg.png" width="80px" height="150px">
+                <img id="s4" onclick="s4()" src="./EmptyImg/emptyImg.png" width="80px" height="150px">
+                <img id="s5" onclick="s5()" src="./EmptyImg/emptyImg.png" width="80px" height="150px">  
+            </div>
+            <div class="ZoomImg">
+                <img id="fullImage" onclick="printSmall()" src="./EmptyImg/emptyImg.png" width="440" height="440">
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
