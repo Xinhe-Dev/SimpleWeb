@@ -1,2 +1,2 @@
 # FourChair
-Please note phase 1 document was been upload by Xinhe, NO NEED TO UPLOAD AGAIN!!!!!!!!!
+This is simple website you can search some fruit with image
